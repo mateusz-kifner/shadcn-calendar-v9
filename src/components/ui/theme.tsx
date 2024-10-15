@@ -9,7 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import useColorScheme, { colorSchemes } from "@/components/ui/useColorScheme"
+import useColorScheme, { colorSchemes } from "@/components/ui/useColorScheme";
 import { useId } from "react";
 import { MoonIcon, SunIcon } from "lucide-react";
 import useTheme from "./useTheme";
@@ -44,7 +44,6 @@ function ThemeToggle() {
         <DropdownMenuItem onClick={() => setTheme?.("dark")}>
           Dark
         </DropdownMenuItem>
-      
       </DropdownMenuContent>
     </DropdownMenu>
   );

@@ -1,16 +1,11 @@
 "use client";
 
-
 export type ThemeType = "light" | "dark";
 
-export default function useTheme(
-  defaultValue: ThemeType = "light",
-) {
+export default function useTheme(defaultValue: ThemeType = "light") {
   if (typeof window !== "undefined") {
     const theme = localStorage.getItem("theme") ?? defaultValue;
-    if (
-      theme !== null
-    ) {
+    if (theme !== null) {
       if (theme === "light") {
         document.documentElement?.classList.remove("dark");
       } else {
